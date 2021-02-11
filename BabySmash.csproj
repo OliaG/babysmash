@@ -1,8 +1,8 @@
-﻿<!--Project Sdk="Microsoft.NET.Sdk"-->
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+<!--Project Sdk="Microsoft.NET.Sdk.WindowsDesktop"-->
   <PropertyGroup>
-    <!--TargetFramework>net5.0-windows</TargetFramework-->
-    <TargetFramework>net48</TargetFramework>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <!--TargetFramework>net48</TargetFramework-->
     <OutputType>WinExe</OutputType>
     <ManifestCertificateThumbprint>E5414B70F9F52AE3417847752E84A48FA529E067</ManifestCertificateThumbprint>
     <ManifestKeyFile>BabySmash_2_TemporaryKey.pfx</ManifestKeyFile>
@@ -135,6 +135,7 @@
     <PackageReference Include="Newtonsoft.Json">
       <Version>13.0.1-beta1</Version>
     </PackageReference>
-    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.6.0-preview3.19128.7" />
+    <PackageReference Include="System.Speech" Version="5.0.0" />
   </ItemGroup>
 </Project>
