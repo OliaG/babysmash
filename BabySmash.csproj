@@ -129,9 +129,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Xaml">
-      <Version>4.0.0.1</Version>
-    </PackageReference>
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="5.0.2" />
     <PackageReference Include="Newtonsoft.Json">
       <Version>13.0.1-beta1</Version>
     </PackageReference>
