@@ -1,7 +1,5 @@
-﻿<!--.WindowsDesktop"-->
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
-    <!--net5.0-windows net48-->
     <TargetFramework>net48</TargetFramework>
     <OutputType>WinExe</OutputType>
     <ApplicationIcon>App.ico</ApplicationIcon>
