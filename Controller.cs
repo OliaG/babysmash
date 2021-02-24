@@ -23,6 +23,8 @@ namespace BabySmash
 {
     using System.Globalization;
     using System.IO;
+    using System.Reflection;
+    using System.Runtime.Versioning;
     using System.Speech.Synthesis;
     using System.Text;
 
@@ -30,6 +32,8 @@ namespace BabySmash
 
     public class Controller
     {
+        public string NetVersion { get; set; }
+
         [DllImport("user32.dll")]
         private static extern IntPtr SetFocus(IntPtr hWnd);
 
@@ -50,7 +54,12 @@ namespace BabySmash
         private WordFinder wordFinder = new WordFinder("Words.txt");
 
         /// <summary>Prevents a default instance of the Controller class from being created.</summary>
-        private Controller() { }
+        private Controller()
+        {
+            var framework = Assembly.GetEntryAssembly()?.GetCustomAttribute<TargetFrameworkAttribute>()?.FrameworkName;
+
+            this.NetVersion = ".NET version:  " + framework.ToString();
+        }
 
         public static Controller Instance
         {

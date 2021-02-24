@@ -89,6 +89,7 @@
             <LineBreak/>
             <Bold>Ctrl-Shift-Alt-O</Bold> for options, <Bold>ALT-F4</Bold> to exit
             </TextBlock>
+            <TextBlock Text="{Binding Path=NetVersion}" Margin="15,15,0,0"/>
             <TextBlock x:Name="UpdateAvailableLabel" Visibility="Hidden" Margin="15,10,0,0" FontSize="12">
                 <TextBlock.BitmapEffect>
                     <BitmapEffectGroup>
